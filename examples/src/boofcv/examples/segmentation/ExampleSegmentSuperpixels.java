@@ -28,7 +28,7 @@ import boofcv.factory.segmentation.FactorySegmentationAlg;
 import boofcv.gui.ListDisplayPanel;
 import boofcv.gui.feature.VisualizeRegions;
 import boofcv.gui.image.ShowImages;
-import boofcv.io.image.ConvertBufferedImage;
+import boofcv.core.image.ConvertBufferedImage;
 import boofcv.io.image.UtilImageIO;
 import boofcv.struct.feature.ColorQueue_F32;
 import boofcv.struct.image.*;
@@ -103,7 +103,7 @@ public class ExampleSegmentSuperpixels {
 		gui.addImage(outColor,"Color of Segments");
 		gui.addImage(outBorder, "Region Borders");
 		gui.addImage(outSegments, "Regions");
-		ShowImages.showWindow(gui,"Superpixels", true);
+		ShowImages.showWindow(gui,"Superpixels");
 	}
 
 	public static void main(String[] args) {
